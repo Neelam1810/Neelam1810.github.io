@@ -14,7 +14,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("86236.jpg");
+  background-image: url("img.jpg");
 
   /* Full height */
   height: 100%;
@@ -37,16 +37,20 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.op{
+  background: rgba(0,0,0,0.1);
+}
 .dv a{
   color: white;
   }
 .dv:hover{
 color: lightgray;
 }
+
 .ht{
   height: auto;
 }
+
 </style>
 
 <title>Home</title>
@@ -172,16 +176,17 @@ color: lightgray;
 
 
   <!--Jumbotron-->
-    <div class="jumbotron bg ht">
-    <h1 class="display-5  font-weight-bold text-light">Hello, GNDUians!</h1>
-    <p class="lead font-weight-bold text-light">This is a simple website which would help you in Collecting and managing notes.</p>
-    <hr class="my-4 ">
-    <p class=" font-weight-bold text-light">Want to know How this work?</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Know more</a>
-    </p>
-  </div>
+  <div class="jumbotron  container-fluid bg p-5 col-sm-12  ht" >
 
+    <h1 class="display-5  font-weight-bold mb-5">Hello, GNDUians!</h1>
+    <h3 class="lead font-weight-bold  ">This is a simple website which would help you in Collecting and managing notes.</h3>
+    <hr class="my-4 ">
+    <p class=" font-weight-bold ">Want to know How this work?</p>
+    <p class="lead">
+      <a class="btn btn-danger btn-lg" href="#" role="button">Know more</a>
+    </p>
+
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
