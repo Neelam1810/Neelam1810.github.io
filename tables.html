@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="/site/templates/styles/main.css">
+
+  <style type='text/css'>
+
+  .modal-header, h4, .close {
+     background-color: #5cb85c;
+     color:white !important;
+     text-align: center;
+     font-size: 30px;
+  }
+  .modal-footer {
+     background-color: #f9f9f9;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+    .dv a{
+      color: white;
+      }
+    .dv:hover{
+    color: lightgray;
+    }
+    .bg {
+        /* The image used */
+        background-image: url("Red-Background.jpg");
+
+        /* Full height */
+
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  .op{
+    background: rgba(0,0,0,0.1);
+
+  }
+
+  </style>
+
+  <body>
+
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg  bg-dark sticky-top dv">
+    <a class="navbar-brand text-white font-weight-bold text-left dv" href="#">CodeHelper</a>
+    <button class="navbar-toggler navbar-dark btn btn-danger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link  font-weight-bold text-left dv" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle text-warning font-weight-bold text-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Materials
+          </a>
+          <div class="dropdown-menu font-weight-bold" style="margin-top:-2px;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item active  font-weight-bold text-left" href="#">Notes</a>
+            <a class="dropdown-item  font-weight-bold text-left" href="#    ">Previous Papers</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-left dv" href="#">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  font-weight-bold text-left dv" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-left dv" href="#">How This Works!?</a>
+        </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dv font-weight-bold text-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Log in
+          </a>
+      <form class="dropdown-menu p-4" style="margin-top: 7px;">
+        <div class="form-group">
+          <label for="exampleDropdownFormEmail2">Email address</label>
+          <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleDropdownFormPassword2">Password</label>
+          <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+          <label class="form-check-label" for="dropdownCheck2">
+            Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Log in</button>
+        <a class="dropdown-item text-dark mt-2" href="#">Forgot password?</a>
+        <div class="dropdown-divider"></div>
+
+        <p class="text-left">New around here?</p>
+        </form>
+
+       </li>
+
+       <li class="text-left">
+       <button class="btn btn-danger font-weight-bold " type='button' data-toggle='modal' data-target='#popupWindow'>Sign Up</button>
+
+       </li>
+
+      </ul>
+
+
+      <form class="form-inline my-2 my-lg-0">
+
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn  btn-warning font-weight-bold my-2 my-sm-0" type="submit">Search Code</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="popupWindow" >
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+
+        <div class="modal-header" style="padding:10px 25px;">
+            <h4 class="modal-title text-left"> Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body" style="padding:35px 50px;">
+          <div class="container form-group text-left">
+          <form role="form">
+              <p><input type="text" class="form-control" id="usrname" placeholder="Username"></p>
+              <p><input type="text" class="form-control" id="psw" placeholder="Enter password"></p>
+              <p><input type="text" class="form-control" id="psw" placeholder="Confirm Password"></p>
+              <p><input type="text" class="form-control" id="psw" placeholder="Department"></p>
+              <p><input type="text" class="form-control" id="psw" placeholder="Name"></p>
+              <p><input type="text" class="form-control" id="psw" placeholder="Class"></p>
+              <p><input type="text" class="form-control" id="psw" placeholder="Roll No."></p>
+              </form>
+          </div>
+
+              <a href="blog.html"><button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button></a>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+    <div class="bg">
+      <h2 class="mt-2 p-2 text-light">Notes To Be Printed :</h2>
+    </div>
+        <table class='table table-striped'>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Code</th>
+                    <th>No. of <br>copies</br></th>
+                    <th>Amount</th>
+                    <th>Username</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>32155</td>
+                    <td>2</td>
+                    <td>32</td>
+                    <td>abc</td>
+                    <td><button class="btn btn-danger">Print</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>15845</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>bca</td>
+                    <td><button class="btn btn-danger">Print</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>34543</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>ddc</td>
+                    <td><button class="btn btn-danger">Print</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    <div class="bg">
+      <h2 class="mt-2 p-2 text-light">Notes Printed :</h2>
+    </div>
+    <div>
+      <table class='table table-striped'>
+          <thead>
+          <tr>
+              <th>S.No</th>
+              <th>Code</th>
+              <th>No. of <br>copies</br></th>
+              <th>Amount</th>
+              <th>Username</th>
+              <th>Status</th>
+          </tr>
+            <thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>32155</td>
+                      <td>2</td>
+                      <td>32</td>
+                      <td>abc</td>
+                      <td><button class="btn btn-danger">Printed</button></td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>15845</td>
+                      <td>5</td>
+                      <td>15</td>
+                      <td>bca</td>
+                      <td><button class="btn btn-danger">Printed</button></td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>34543</td>
+                      <td>2</td>
+                      <td>50</td>
+                      <td>ddc</td>
+                      <td><button class="btn btn-danger">Printed</button></td>
+                  </tr>
+              </tbody>
+        </table>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="js/bootstrap.min.js"></script>
+
+    </body>
+    </html>
