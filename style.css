@@ -1,0 +1,79 @@
+.body{
+  margin:0px;
+  padding:0px;
+  background-color:#e24747;
+  box-sizing: border-box;
+
+}
+
+.div_1{
+  padding: 0.5%;
+  border-bottom-right-radius: 15%;
+  background-color: #f6f7f2;
+  margin-bottom: 3%;
+  -webkit-animation: mymove 2s ; /* Safari 4.0 - 8.0 */
+    animation: mymove 2s ;
+    -webkit-animation-timing-function: reverse;
+    animation-timing-function: reverse;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+
+}.div_2{
+  padding: 0.5%;
+  border-bottom-right-radius: 15%;
+  background-color: #f6f7f2;
+  margin-bottom: 3%;
+  -webkit-animation: mymove_1 2s ; /* Safari 4.0 - 8.0 */
+    animation: mymove_1 2s ;
+    -webkit-animation-timing-function:reverse;
+    animation-timing-function: reverse;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+
+}
+
+@-webkit-keyframes mymove {
+    from {left: -15%;}
+
+    to{left:0%;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: -15%;}
+
+    to {left: 0%;}
+
+}
+
+@-webkit-keyframes mymove_1 {
+    from {left: 17%;}
+
+    to{left:0%;}
+}
+
+/* Standard syntax */
+@keyframes mymove_1 {
+    from {left: 17%;}
+
+    to {left: 0%;}
+
+}
+
+
+
+.heading_2{
+  color:black;
+  text-align: center;
+}
+
+.para_1{
+  color: black;
+  font-weight: bold;
+}
+
+.icon{
+
+}
